@@ -1,20 +1,29 @@
 {
-  "family": "CNN",
-  "config": {
-    "filters": 16,
-    "kernel_size": 3
+  "final model": "LSTM",
+  "grid": {
+    "units": [
+      32,
+      64
+    ],
+    "lr": [
+      0.002,
+      0.0005
+    ]
   },
-  "epochs": 29,
-  "lookback": 168,
-  "horizon": 24,
-  "features": [
+  "grid winner": "LSTM (units=64, lr=0.002)",
+  "inputs": [
     "load (scaled)",
-    "hour sin",
-    "hour cos",
-    "weekday sin",
-    "weekday cos"
+    "hour / 23",
+    "weekday / 6"
   ],
-  "seed": 4010,
-  "scaler_mean_MW": 55914.81996527778,
-  "scaler_scale_MW": 10014.621470426913
+  "window": 168,
+  "horizon": 24,
+  "train end": 30240,
+  "validation end": 40320,
+  "mean (MW)": 55740.73046875,
+  "std (MW)": 10063.4375,
+  "epochs": 30,
+  "patience": 6,
+  "batch size": 128,
+  "seed": 4010
 }
