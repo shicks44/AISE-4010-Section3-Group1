@@ -1,16 +1,16 @@
 {
-  "final model": "LSTM",
+  "final model": "TCN",
   "grid": {
-    "units": [
-      32,
-      64
+    "filters": [
+      16,
+      32
     ],
-    "lr": [
-      0.002,
-      0.0005
+    "kernel_size": [
+      3,
+      5
     ]
   },
-  "grid winner": "LSTM (units=64, lr=0.002)",
+  "grid winner": "TCN (filters=32, kernel=5)",
   "inputs": [
     "load (scaled)",
     "hour / 23",

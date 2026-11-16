@@ -29,7 +29,7 @@ The notebook downloads the CSV into `data/` on its first run. See `data/README.m
 1. Open `AISE4010_Project_Group01.ipynb`.
 2. Restart the kernel and run all cells top to bottom.
 
-Expected runtime: about an hour on a laptop CPU, most of it model training in Sections 7 and 8. The smoke test in Section 10 reloads the saved model and checks its forecasts in a few seconds.
+Expected runtime: about two hours on a laptop CPU, most of it model training in Sections 7 and 8. The smoke test in Section 10 reloads the saved model and checks its forecasts in a few seconds.
 
 ## Outputs
 
